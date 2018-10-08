@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   signIn()
   {
-     console.log(this.username, this.password);
+     
     this.service.Login(this.username,this.password).subscribe(ress=>
     {
       if(ress['token'])
