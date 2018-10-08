@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   signIn()
   {
-    console.log(this.username, this.password);
+     console.log(this.username, this.password);
     this.service.Login(this.username,this.password).subscribe(ress=>
     {
       if(ress['token'])
@@ -36,7 +36,15 @@ export class LoginComponent implements OnInit {
         this.password="";
         this.mensaje = "contraseña o usuario incorrecto"
       }
-    });
+    }, error => 
+    {
+      console.log(error);
+      this.username="";
+      this.password="";
+      this.mensaje = "contraseña o usuario incorrecto"
+    }
+    );
+       
        
 
   }
