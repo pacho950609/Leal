@@ -1,27 +1,32 @@
-# Front
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## Documentacion
 
-## Development server
+Se hizo uso del framework angular, por lo tanto sera necesario tener instalado (node, npm y angular-cli),
+para instalar angular-cli es importante correr npm install -g @angular/cli y NO npm install -g ng-cli
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para ejecutar el proyecto se debera :
 
-## Code scaffolding
+- Clonar o descargar el proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Correr el comando npm i
 
-## Build
+- Correr el comando npm start
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+- Correr en el navegador localhost:4200
 
-## Running unit tests
+Como alternativa se podria usar la carpeta dist para la ejecucion del proyecto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Estructura
 
-## Running end-to-end tests
+Se crearon 2 modulos principales
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-Autenticacion : tiene el componente de login el cual una vez es iniciada sesion agrega el token de autenticacion como cookie
+y por lo tanto se podra cerrar, abrir la aplicacion y moverme entre pestañas sin ser necesario volver a logearse.
 
-## Further help
+-Transacciones : esta conformado por 2 componentes :
+  -filtro : contiene los filtros que se pueden aplicar a las transacciones
+  -transacciones : contiene la lista de transacciones que se mostrara en la aplicacion
+  
+Adicionalmente hay una carpeta de servicios la cual es encargada de conectarse al web api y consuminar los servicios
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Finalmente hay una carpeta de modelo la cual contiene el modelos de todas las entidades de la aplicacion (transacciones)
