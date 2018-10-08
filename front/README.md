@@ -24,9 +24,11 @@ Se crearon 2 modulos principales
 y por lo tanto se podra cerrar, abrir la aplicacion y moverme entre pestañas sin ser necesario volver a logearse.
 
 -Transacciones : esta conformado por 2 componentes :
+
   -filtro : contiene los filtros que se pueden aplicar a las transacciones
+  
   -transacciones : contiene la lista de transacciones que se mostrara en la aplicacion
   
-Adicionalmente hay una carpeta de servicios la cual es encargada de conectarse al web api y consuminar los servicios
+Adicionalmente hay una carpeta de servicios la cual es encargada de conectarse al web api y consumir los servicios
 
 Finalmente hay una carpeta de modelo la cual contiene el modelos de todas las entidades de la aplicacion (transacciones)
